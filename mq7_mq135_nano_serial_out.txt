@@ -1,0 +1,39 @@
+int led = 13;
+//byte i;
+int tcount = 0;
+
+void setup(void) 
+{
+  
+  Serial.begin(9600);
+  pinMode(led, OUTPUT); 
+    
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(700);               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by 
+  delay(700);
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(700);               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by 
+  delay(700);
+}
+
+void loop(void) 
+{
+
+    while(1)
+    {
+        int mq7 = analogRead(A0);
+        
+        int mq135 = analogRead(A1);      
+            
+        Serial.print(mq7);
+        Serial.print(",");
+        Serial.println(mq135);
+          
+        delay(1000);     // maybe 750ms is enough, maybe not
+        
+    }
+  
+  
+}
