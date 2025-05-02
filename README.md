@@ -9,3 +9,12 @@ analog values to digital values and then to serial values which could be read by
 Raspberry Pi zero 2W processes the data and then displays that data on to the Thing Speak using Wi- 
 Fi module ESP8266. The same is displayed on LCD. There are also 2 switches to select which 
 algorithm we prefer between Random Forest and Decision Tree algorithms. 
+The main blocks of this project are: 
+1. Regulated Power Supply. 
+2. Raspberry Pi zero 2W. 
+3. DHT11 Sensor. 
+4. MQ-7 Sensor. 
+5. LCD display. 
+6. MQ-135 Sensor.
+7. ESP 8266. 
+8. Nano Board. 
