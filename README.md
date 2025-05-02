@@ -1,20 +1,50 @@
-# Real-Time-Air-Quality-Prediction-In-python
-Real time air quality prediction using sensors and Machine Learning Algorithms [Random Forest and Decision Tree]
+🌫️ Real-Time Air Quality Prediction in Python
+This project focuses on real-time air quality monitoring and prediction using sensors and machine learning algorithms (Random Forest and Decision Tree). It uses a Raspberry Pi Zero 2W as the core processor, interfaced with environmental sensors, and transmits data to ThingSpeak for cloud visualization.
 
+📌 Features
+Real-time air quality monitoring
 
-The sensors DHT11, MQ-7 and MQ-135 are used to get humidity, temperature, C02 
-and air quality values. DHT 11 is interfaced to raspberry pi zero 2w directly as it gives digital values 
-which could be read by Raspberry Pi. MQ7 and MQ135 are interfaced to a nano board which converts 
-analog values to digital values and then to serial values which could be read by raspberry pi. 
-Raspberry Pi zero 2W processes the data and then displays that data on to the Thing Speak using Wi- 
-Fi module ESP8266. The same is displayed on LCD. There are also 2 switches to select which 
-algorithm we prefer between Random Forest and Decision Tree algorithms. 
-The main blocks of this project are: 
-1. Regulated Power Supply. 
-2. Raspberry Pi zero 2W. 
-3. DHT11 Sensor. 
-4. MQ-7 Sensor. 
-5. LCD display. 
-6. MQ-135 Sensor.
-7. ESP 8266. 
-8. Nano Board. 
+ML-based prediction using Random Forest & Decision Tree
+
+Sensor data display on LCD
+
+Cloud logging via ThingSpeak
+
+Physical switch to select algorithm
+
+Portable and low-cost system
+
+🧠 Machine Learning Algorithms
+Random Forest Classifier
+
+Decision Tree Classifier
+
+These models are trained on collected sensor data and deployed on the Raspberry Pi to predict the air quality index (AQI) or pollutant levels.
+
+🧰 Hardware Components Used
+Component	Function
+Raspberry Pi Zero 2W	Main processing unit
+DHT11 Sensor	Measures temperature and humidity
+MQ-7 Sensor	Detects Carbon Monoxide (CO)
+MQ-135 Sensor	Detects NH3, NOx, alcohol, benzene, smoke, etc.
+Nano Board	Converts analog sensor values to digital via serial
+ESP8266 Wi-Fi Module	Sends data to ThingSpeak
+LCD Display (16x2)	Displays current readings and predictions
+2x Switches	Select between Decision Tree or Random Forest algorithm
+Regulated Power Supply	Powers the system safely
+
+🖥️ System Architecture
+DHT11 → Digital data → Raspberry Pi
+
+MQ-7 & MQ-135 → Analog data → Nano Board → Serial to Raspberry Pi
+
+Raspberry Pi:
+
+Collects data
+
+Predicts air quality using selected ML model
+
+Displays results on LCD
+
+Sends data to ThingSpeak via ESP8266
+
