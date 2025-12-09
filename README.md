@@ -1,4 +1,4 @@
-# 🌫️ Real-Time Air Quality Prediction using Python & ML
+# Real-Time Air Quality Prediction using Python & ML
 
 📡 Monitor and predict air quality in real-time using **sensors** and **machine learning models** (Random Forest & Decision Tree) on a **Raspberry Pi Zero 2W**. Data is visualized on **ThingSpeak** and displayed locally on an **LCD screen**.
 
